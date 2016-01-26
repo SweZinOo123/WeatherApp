@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cvMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="@dimen/elevation_ten"
+        card_view:cardCornerRadius="@dimen/radius_four"
+        android:layout_weight="0.76"
+        android:layout_marginLeft="@dimen/margin_four"
+        android:layout_marginRight="@dimen/margin_four"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        card_view:cardBackgroundColor="@color/colorgray"
+        >
+
+
+        <ImageView
+            android:id="@+id/weathericon"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:layout_alignBottom="@+id/relativeLayout" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New                       Text"
+            android:id="@+id/weatherdesc"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold"
+            android:gravity="right"
+            android:textSize="20dp"
+            android:layout_marginStart="31dp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/weathericon" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/relativeLayout"
+            android:layout_below="@+id/weatherdesc"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="55dp">
+            <TextView
+                android:layout_width="209dp"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/tempC"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/tempF"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/tempF"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:layout_below="@+id/tempC"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*\ C"
+                android:id="@+id/textView"
+                android:gravity="left"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/tempF"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*\ F"
+                android:id="@+id/textView2"
+                android:gravity="left"
+                android:layout_below="@+id/tempC"
+                android:layout_toEndOf="@+id/tempF"
+                android:textStyle="bold" />
+
+            <ProgressBar android:id="@+id/progressBar1"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/textView2"
+                android:layout_alignEnd="@+id/tempC" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

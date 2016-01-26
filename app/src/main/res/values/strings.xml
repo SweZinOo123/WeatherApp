@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">WealtherApp</string>
+    <string name="action_settings">Settings</string>
+    <string name="wealtherapi">59b686cf6cd7a0ca96491452f869a</string>
+    <string-array name="cities">
+        <item>Singapore</item>
+        <item>Bangkok</item>
+        <item>Yangon</item>
+        <item>Newyork</item>
+        <item>Mexico</item>
+        <item>Manila</item>
+        <item>Mumbai</item>
+        <item>Delhi</item>
+        <item>Jakarta</item>
+        <item>Seoul</item>
+        <item>Moscow</item>
+        <item>Shanghai</item>
+        <item>Paris</item>
+        <item>Beijing</item>
+        <item>Chicago</item>
+        <item>London</item>
+        <item>Shenzhen</item>
+        <item>Philadelphia</item>
+        <item>TaiWan</item>
+        <item>Toronto</item>
+        <item>Boston</item>
+        <item>Berlin</item>
+        <item>Sydney</item>
+        <item>Kolkata</item>
+        <item>Dubai</item>
+        <item>Campinas</item>
+        <item>Portland</item>
+        <item>Fukuoka</item>
+        <item>Manchester</item>
+        <item>Warsaw</item>
+    </string-array>
+</resources>
